@@ -18,6 +18,11 @@ public class Iris extends Sprite {
         this.setTint(Random.randomInt(255));
     }
 
+    public void setSize(double size) {
+        super.setSize(size);
+        irisShadow.setSize(size);
+    }
+
     public void whenAddedToStage(Stage stage) {
         stage.add(irisShadow);
     }
@@ -27,7 +32,6 @@ public class Iris extends Sprite {
     }
 
     public void run() {
-        this.setSize(eye.getSize());
         this.setPosition(
                 this.getMouse()
                         .sub(eye.getPosition())

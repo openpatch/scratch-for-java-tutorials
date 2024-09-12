@@ -13,6 +13,11 @@ public class Eye extends Sprite {
         iris = new Iris(this);
     }
 
+    public void setSize(double size) {
+        super.setSize(size);
+        iris.setSize(size);
+    }
+
     public void whenAddedToStage(Stage stage) {
         stage.add(iris);
     }

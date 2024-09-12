@@ -11,7 +11,6 @@ public class IrisShadow extends Sprite {
     }
 
     public void run() {
-        this.setSize(iris.getSize());
         this.setPosition(iris.getPosition());
         this.setDirection(iris.getDirection());
     }
