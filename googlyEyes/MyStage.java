@@ -6,7 +6,7 @@ import org.openpatch.scratch.internal.Applet;
 
 public class MyStage extends Stage {
     public MyStage() {
-        super(true, "googly-eyes/assets");
+        super(true, "googlyEyes/assets");
 
         this.setColor(100, 100, 100);
 
