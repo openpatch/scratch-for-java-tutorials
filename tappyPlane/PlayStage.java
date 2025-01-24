@@ -48,7 +48,7 @@ public class PlayStage extends Stage {
         var ground = new GroundSprite(this);
         var offsetX = 0.0;
         if (lastGround != null) {
-            offsetX = lastGround.getX() + lastGround.getWidth() - speed;    
+            offsetX = lastGround.getX() + lastGround.getWidth() - speed;
         }
         ground.setPosition(offsetX, -this.getHeight() / 2 + ground.getHeight() / 2);
         this.add(ground);
@@ -77,7 +77,7 @@ public class PlayStage extends Stage {
         this.speed += 0.005;
         this.score = Operators.round((this.speed - this.startSpeed) * 10);
         if (plane.getY() + 100 < -this.getHeight() / 2 ||
-        plane.getY() - 50 > this.getHeight() / 2) {
+                plane.getY() - 50 > this.getHeight() / 2) {
             this.state = PlayState.GAME_OVER;
         }
 
@@ -96,7 +96,7 @@ public class PlayStage extends Stage {
 
     public void run() {
         scoreText.showText("Score: " + score);
-        switch(state) {
+        switch (state) {
             case PLAYING:
                 this.runPlaying();
                 break;

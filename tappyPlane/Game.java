@@ -13,5 +13,5 @@ public class Game extends Window {
     public static void main(String[] args) {
         new Game();
     }
-    
+
 }

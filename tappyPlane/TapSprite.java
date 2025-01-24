@@ -9,9 +9,9 @@ public class TapSprite extends Sprite {
     }
 
     public void run() {
-        if(this.getTimer().everyMillis(400)) {
+        if (this.getTimer().everyMillis(400)) {
             this.nextCostume();
         }
     }
-    
+
 }
