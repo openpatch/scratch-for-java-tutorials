@@ -9,6 +9,7 @@ public class MyStage extends Stage {
         super(true, "googlyEyes/assets");
 
         this.setColor(100, 100, 100);
+        this.addSound("music", "googlyEyes/assets/summer.wav");
 
         for (int i = 0; i < 1200; i++) {
             var eye = new Eye();
@@ -28,6 +29,7 @@ public class MyStage extends Stage {
 
     public void run() {
         this.display("Framerate: " + Applet.getInstance().frameRate);
+        this.playSound("music");
     }
 
     public static void main(String[] args) {
