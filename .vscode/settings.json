@@ -1,7 +1,6 @@
 {
     "java.project.referencedLibraries": [
-        "/home/mike/Sources/openpatch/scratch-for-java-tutorials/+libs/scratch4j-linux-amd64.jar",
-        "/home/mike/Sources/openpatch/scratch-for-java-tutorials/+libs/scratch4j-javadoc.jar"
+        "+libs/**/*.jar"
     ],
     "java.project.sourcePaths": [
         "."

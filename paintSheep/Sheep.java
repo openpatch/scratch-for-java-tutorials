@@ -1,9 +1,9 @@
 package paintSheep;
 
 import org.openpatch.scratch.RotationStyle;
-import java.awt.geom.Ellipse2D;
 import org.openpatch.scratch.extensions.animation.AnimatedSprite;
 import org.openpatch.scratch.extensions.color.Color;
+import org.openpatch.scratch.extensions.shape.Ellipse;
 
 public class Sheep extends AnimatedSprite {
 
@@ -14,7 +14,7 @@ public class Sheep extends AnimatedSprite {
         this.addAnimation("down", "paintSheep/assets/sheep.png", 4, 32, 32, 0);
         this.addAnimation("left", "paintSheep/assets/sheep.png", 4, 32, 32, 1);
         this.addAnimation("up", "paintSheep/assets/sheep.png", 4, 32, 32, 2);
-        this.setHitbox(new Ellipse2D.Double(4, 4, 24, 24));
+        this.setHitbox(new Ellipse(4, 4, 24, 24));
         this.setSize(250);
         this.setTint(color);
         this.getPen().setColor(color);
