@@ -1,7 +1,7 @@
 package tappyPlane;
 
 import org.openpatch.scratch.Window;
-import org.openpatch.scratch.extensions.text.Text;
+import org.openpatch.scratch.Text;
 
 public class Game extends Window {
 
@@ -11,7 +11,7 @@ public class Game extends Window {
     }
 
     public static void main(String[] args) {
-        Text.DEFAULT_FONT = "tappyPlane/assets/kenvector_future.ttf";
+        Text.useFont("tappyPlane/assets/kenvector_future.ttf");
         new Game();
     }
 

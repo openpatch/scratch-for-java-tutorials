@@ -1,6 +1,7 @@
 {
     "java.project.referencedLibraries": [
-        "+libs/**/*.jar"
+        "/home/mike/Sources/openpatch/scratch-for-java-tutorials/+libs/scratch-5.0.0-all.jar",
+        "/home/mike/Sources/openpatch/scratch-for-java-tutorials/+libs/scratch-5.0.0-javadoc.jar"
     ],
     "java.project.sourcePaths": [
         "."

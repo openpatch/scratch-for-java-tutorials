@@ -1,8 +1,7 @@
 package googlyEyes;
 
 import org.openpatch.scratch.Sprite;
-import org.openpatch.scratch.Stage;
-import org.openpatch.scratch.extensions.math.Random;
+import org.openpatch.scratch.Random;
 
 public class Iris extends Sprite {
 
@@ -23,12 +22,12 @@ public class Iris extends Sprite {
         irisShadow.setSize(size);
     }
 
-    public void whenAddedToStage(Stage stage) {
-        stage.add(irisShadow);
+    public void whenAddedToStage() {
+        this.getStage().add(irisShadow);
     }
 
-    public void whenRemovedFromStage(Stage stage) {
-        stage.remove(irisShadow);
+    public void whenRemovedFromStage() {
+        irisShadow.remove();
     }
 
     public void run() {

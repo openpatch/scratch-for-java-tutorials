@@ -2,8 +2,8 @@ package tappyPlane;
 
 import org.openpatch.scratch.Stage;
 import org.openpatch.scratch.Window;
-import org.openpatch.scratch.extensions.color.HtmlColor;
-import org.openpatch.scratch.extensions.text.Text;
+import org.openpatch.scratch.HtmlColor;
+import org.openpatch.scratch.Text;
 
 public class GameOverStage extends Stage {
 

@@ -28,8 +28,8 @@ public class PlaneSprite extends Sprite {
         }
     }
 
-    public void whenKeyPressed(int keyCode) {
-        if (keyCode == KeyCode.VK_SPACE) {
+    public void whenKeyPressed(KeyCode keyCode) {
+        if (keyCode == KeyCode.SPACE) {
             this.velocity = 10;
         }   
     }

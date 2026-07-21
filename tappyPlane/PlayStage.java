@@ -3,9 +3,9 @@ package tappyPlane;
 import org.openpatch.scratch.Operators;
 import org.openpatch.scratch.Stage;
 import org.openpatch.scratch.Window;
-import org.openpatch.scratch.extensions.math.Random;
-import org.openpatch.scratch.extensions.text.Text;
-import org.openpatch.scratch.extensions.text.TextAlign;
+import org.openpatch.scratch.Random;
+import org.openpatch.scratch.Text;
+import org.openpatch.scratch.TextAlign;
 
 enum PlayState {
     PLAYING,

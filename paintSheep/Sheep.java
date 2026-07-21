@@ -1,9 +1,9 @@
 package paintSheep;
 
 import org.openpatch.scratch.RotationStyle;
-import org.openpatch.scratch.extensions.animation.AnimatedSprite;
-import org.openpatch.scratch.extensions.color.Color;
-import org.openpatch.scratch.extensions.shape.Ellipse;
+import org.openpatch.scratch.AnimatedSprite;
+import org.openpatch.scratch.Color;
+import org.openpatch.scratch.Ellipse;
 
 public class Sheep extends AnimatedSprite {
 
@@ -20,7 +20,6 @@ public class Sheep extends AnimatedSprite {
         this.getPen().setColor(color);
         this.getPen().setSize(32);
         this.setRotationStyle(RotationStyle.LEFT_RIGHT);
-        this.setOnEdgeBounce(true);
     }
 
     public void turnLeft() {
@@ -38,6 +37,7 @@ public class Sheep extends AnimatedSprite {
             this.turnLeft(180);
         }
         this.move(speed);
+        this.ifOnEdgeBounce();
         if (this.getDirection() >= 315 || this.getDirection() <= 45) {
             this.playAnimation("up");
         } else if (this.getDirection() > 45 && this.getDirection() < 135) {

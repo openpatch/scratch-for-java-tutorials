@@ -4,7 +4,7 @@ import org.openpatch.scratch.Window;
 
 public class Game extends Window {
   public Game() {
-    super(true);
+    this.setDebug(true);
     this.setStage(new Level());
   }
 

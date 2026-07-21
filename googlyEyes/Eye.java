@@ -1,7 +1,6 @@
 package googlyEyes;
 
 import org.openpatch.scratch.Sprite;
-import org.openpatch.scratch.Stage;
 
 public class Eye extends Sprite {
 
@@ -18,11 +17,11 @@ public class Eye extends Sprite {
         iris.setSize(size);
     }
 
-    public void whenAddedToStage(Stage stage) {
-        stage.add(iris);
+    public void whenAddedToStage() {
+        this.getStage().add(iris);
     }
 
-    public void whenRemovedFromStage(Stage stage) {
-        stage.remove(iris);
+    public void whenRemovedFromStage() {
+        iris.remove();
     }
 }

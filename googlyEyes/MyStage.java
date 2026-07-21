@@ -1,13 +1,11 @@
 package googlyEyes;
 
 import org.openpatch.scratch.Stage;
-import org.openpatch.scratch.extensions.math.Random;
-import org.openpatch.scratch.internal.Applet;
+import org.openpatch.scratch.Random;
 
 public class MyStage extends Stage {
     public MyStage() {
-        super(true, "googlyEyes/assets");
-
+        super(480, 360, "googlyEyes/assets");
         this.setColor(100, 100, 100);
         this.addSound("music", "googlyEyes/assets/summer.wav");
 
@@ -28,7 +26,7 @@ public class MyStage extends Stage {
     }
 
     public void run() {
-        this.display("Framerate: " + Applet.getInstance().frameRate);
+        this.display("Framerate: " + this.getFrameRate());
         this.playSound("music");
     }
 

@@ -1,7 +1,6 @@
 package characterBuilder;
 
 import org.openpatch.scratch.Sprite;
-import org.openpatch.scratch.Stage;
 
 public class Character extends Sprite {
 
@@ -9,13 +8,13 @@ public class Character extends Sprite {
   private Body body;
 
   public Character() {
+    body = new Body();
+    face = new Face();
   }
 
-  public void whenAddedToStage(Stage stage) {
-    body = new Body();
-    stage.add(body);
-    face = new Face();
-    stage.add(face);
+  public void whenAddedToStage() {
+    this.getStage().add(body);
+    this.getStage().add(face);
   }
 
   public Face getFace() {

@@ -3,7 +3,7 @@ package paintSheep;
 import org.openpatch.scratch.KeyCode;
 import org.openpatch.scratch.Operators;
 import org.openpatch.scratch.Stage;
-import org.openpatch.scratch.extensions.color.HtmlColor;
+import org.openpatch.scratch.HtmlColor;
 
 public class Level extends Stage {
 
@@ -12,7 +12,7 @@ public class Level extends Stage {
 
     public Level() {
         this.addBackdrop("gras", "paintSheep/assets/gras.png");
-        this.enableYSort();
+        this.getSorting().byY();
 
         this.player1 = new Sheep(HtmlColor.BLUE);
         this.player2 = new Sheep(HtmlColor.FUCHSIA);
@@ -26,7 +26,7 @@ public class Level extends Stage {
 
     public double[] getScore() {
         double[] score = {0, 0};
-        var pixels = this.getBackgroundPixels();
+        var pixels = this.getPixels().background();
 
         for (int pixel : pixels) {
             if (pixel == 0) continue;
@@ -44,15 +44,15 @@ public class Level extends Stage {
     }
 
     public void run() {
-        if (this.isKeyPressed(KeyCode.VK_A)) {
+        if (this.isKeyPressed(KeyCode.A)) {
             this.player1.turnLeft();
-        } else if (this.isKeyPressed(KeyCode.VK_D)) {
+        } else if (this.isKeyPressed(KeyCode.D)) {
             this.player1.turnRight();
         } 
 
-        if (this.isKeyPressed(KeyCode.VK_LEFT)) {
+        if (this.isKeyPressed(KeyCode.LEFT)) {
             this.player2.turnLeft();
-        } else if (this.isKeyPressed(KeyCode.VK_RIGHT)) {
+        } else if (this.isKeyPressed(KeyCode.RIGHT)) {
             this.player2.turnRight();
         }
 
